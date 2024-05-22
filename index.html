@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container d-flex flex-column justify-content-center align-items-center p-2 gap-3">
+        <h1>API Rick & Morty</h1>
+        <div class="form-group gap-3">
+            <h2>Busca aquí tu personaje de Rick y Morty</h2>
+        </div>
+        <form id="form" class="d-flex flex-column ms-1 gap-3">
+            <input type="search" class="form-control" id="searchId" placeholder="buscar" />
+            <input type="submit" value="Buscar Personaje" class="btn btn-primary" />
+        </form>
+        <section id="characters" class="d-flex justify-content-center flex-wrap gap-4"></section>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
